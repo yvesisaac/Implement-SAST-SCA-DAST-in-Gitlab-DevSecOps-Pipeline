@@ -2,7 +2,7 @@ Clone Terraform Repo On Local System
 
 Copy this url
 https://github.com/asecurityguru/terraform-ec2-jenkins-aws-k8s-infra-creation.git
-Go to your local disk and create a folder. Example: aws terraform infra
+Go to your local disk and create a folder. Example: aws_terraform_infra
 In the folder, click with the right button of your mouse and select GIT BASH HERE command
 On the GIT terminal write:
 git clone, and paste https://github.com/asecurityguru/terraform-ec2-jenkins-aws-k8s-infra-creation.git
