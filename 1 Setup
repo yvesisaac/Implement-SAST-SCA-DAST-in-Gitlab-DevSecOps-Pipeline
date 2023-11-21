@@ -29,15 +29,15 @@ Enter the command (aws help), for example, to see if you are already logged into
 
 Terraform Installation
 
-Open in browser https://developer.hashicorp.com/terraform/install
+Open in your browser https://developer.hashicorp.com/terraform/install
 Choose the Windows option, under AMD64 click Download
 Create a folder on disk C called terraform
 After downloading the zipped .exe file, extract it into the terraform folder
 
-Click on the start menu in Windows, and search for: view advanced system settings
+Click on the Windowsstart menu , and then search for: advanced system settings
 Click on Environment Variables
 Click on Path –> Edit
 Select the New option, enter the path C:\terraform and then click OK.
 
-Test that terraform is up and running with:
+Test if terraform is up and running ok with:
 terraform -version
