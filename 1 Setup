@@ -1,1 +1,43 @@
 # Implement-SAST-SCA-DAST-in-Jenkins-DevSecOps-Pipeline
+
+AWS account
+In the AWS console, go to IAM, click on users, then click on create user
+Name your user, click next, select Attach policies directly, choose: AdministratorAccess
+Click next, then click create user
+Access AWS VPC product, click subnets and note the first
+Then go to security groups, click on Create Security Group
+Name the SG and leave the Inbound rules and Outbound rules for ALL
+Click Create Security Group
+
+
+AWS CLI installation
+At the command prompt use this command
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+then write
+aws --version
+If installed correctly the result will be:
+aws-cli/2.10.0 Python/3.11.2 Windows/10 exe/AMD64 prompt/off
+
+Then configure your CLI with the command
+aws configure (enter)
+Enter the Access Key ID of the account you created (enter)
+enter the Secret Access Key (enter)
+In Default region name: enter the aws region you are using {example: us-east-1 ...} (enter)
+In Defaut output format: leave it blank (enter)
+
+Enter the command (aws help), for example, to see if you are already logged into your AWS account
+
+Terraform Installation
+
+Open in browser https://developer.hashicorp.com/terraform/install
+Choose the Windows option, under AMD64 click Download
+Create a folder on disk C called terraform
+After downloading the zipped .exe file, extract it into the terraform folder
+
+Click on the start menu in Windows, and search for: view advanced system settings
+Click on Environment Variables
+Click on Path –> Edit
+Select the New option, enter the path C:\terraform and then click OK.
+
+Test that terraform is up and running with:
+terraform -version
